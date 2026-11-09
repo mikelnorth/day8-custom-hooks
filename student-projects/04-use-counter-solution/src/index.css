@@ -1,0 +1,237 @@
+/* Just enough CSS to make the page readable. Styling is not the lesson. */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: #f8fafc;
+  color: #0f172a;
+  line-height: 1.5;
+}
+
+#root {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+header,
+footer {
+  padding: 1rem 0;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav a {
+  margin-right: 1rem;
+  color: #4338ca;
+  text-decoration: none;
+}
+
+main {
+  padding: 1rem 0;
+}
+
+footer {
+  border-top: 1px solid #e2e8f0;
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.05);
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #64748b;
+}
+
+.card p {
+  margin: 0.25rem 0 0;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.card small {
+  color: #94a3b8;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+button {
+  font: inherit;
+  padding: 0.4rem 0.9rem;
+  margin-right: 0.5rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+  background: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #f1f5f9;
+}
+
+input {
+  font: inherit;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+}
+
+section {
+  margin: 1.5rem 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #94a3b8;
+}
+
+.row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 12rem 1fr;
+  gap: 1.5rem;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sidebar button {
+  margin: 0;
+  text-align: left;
+}
+
+button.active {
+  background: #4338ca;
+  border-color: #4338ca;
+  color: white;
+}
+
+.card h3 {
+  margin: 0;
+}
+
+.card .muted {
+  margin: 0.25rem 0 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #64748b;
+}
+
+.warning {
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+.muted {
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+.hover-box {
+  border: 2px dashed #cbd5e1;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.hover-box.active {
+  border-color: #4338ca;
+  background: #eef2ff;
+}
+
+.tag {
+  border-radius: 999px;
+  background: #e0e7ff;
+  color: #3730a3;
+  padding: 0.1rem 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* Day 8 additions */
+textarea {
+  font: inherit;
+  width: 100%;
+  min-height: 5rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+}
+
+.card.dark {
+  background: #1e293b;
+  border-color: #334155;
+  color: #f8fafc;
+}
+
+.card.dark h3,
+.card.dark .muted {
+  color: #cbd5e1;
+}
+
+.card ul li {
+  display: list-item;
+  list-style: disc inside;
+  border: 0;
+  padding: 0.15rem 0;
+  font-size: 0.9rem;
+}
+
+.row {
+  margin: 0.5rem 0;
+}
+
+pre {
+  white-space: pre-wrap;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+}

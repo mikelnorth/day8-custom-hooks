@@ -1,0 +1,6 @@
+[
+  { "id": 7, "title": "A Brief History of Time", "author": "Stephen Hawking", "year": 1988 },
+  { "id": 8, "title": "The Selfish Gene", "author": "Richard Dawkins", "year": 1976 },
+  { "id": 9, "title": "Cosmos", "author": "Carl Sagan", "year": 1980 },
+  { "id": 10, "title": "The Gene", "author": "Siddhartha Mukherjee", "year": 2016 }
+]
